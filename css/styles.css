@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    line-height: 1.2em;
+    font-family: sans-serif;
+    font-size: 16px;
+    background:linear-gradient( 45deg,#BF4C8D 50%,#454CA6 30%,#724C97 20%) no-repeat;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation-name:flow;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+}
+
+.container{
+    max-width: 1100px;
+    /* border: 2px solid red; */
+}
+
+.box{ 
+    background-color:#fff;
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+    border-radius: 2px;
+    padding:40px;
+}
+
+.box header h1{
+    text-align: center;
+    text-transform:uppercase;
+    color:#333;
+    font-size: 16px;
+    margin:10px 0;
+}
+
+@keyframes flow {
+    0%{
+        display: none;
+        background: none;
+    }
+
+
+    40%{
+        opacity: 40%;
+        background-color: #454CA6;
+    }
+
+    50%{
+        opacity: 50%;
+        background-color: #BF4C8D;
+    }
+
+    70%{
+        opacity: 70%;
+        background:linear-gradient( 45deg,#BF4C8D 70%, #454CA6 30%) no-repeat;
+    }
+
+    80%{
+        opacity: 80%;
+        background:linear-gradient( 45deg,#BF4C8D 40%, #454CA6 60%) no-repeat;
+    }
+
+    90%{
+        opacity: 90%;
+        background:linear-gradient( 45deg,#BF4C8D 30%, #454CA6 70%) no-repeat;
+    }
+    
+
+    100%{
+        opacity: 100%;
+        background:linear-gradient( 45deg,#BF4C8D 50%,#454CA6 30%,#724C97 20%) no-repeat;
+    }
+}
+
+form{
+    display:flex;
+    gap:20px;
+    flex-direction: column;
+}
+
+form #check{
+    display: flex;
+    gap:5px;
+    align-items: center;
+}
+
+form #check p{
+    font-size: 10px;
+    color: #cdc4d6;
+}
+
+form #email, form #password, form #login{
+    padding: 8px;
+    font-size: 14px;
+}
+
+form #email, form #password{
+    border: none;
+    border: 1px solid #cdc4d6;
+    background:#cdc4d6;
+    color: #020741;
+}
+
+form #login{
+    border: none;
+    background-color: #BF4C8D;
+    text-transform: uppercase;
+    color:#fff;
+    cursor:pointer
+}
+
+
+.text{
+    color:#cdc4d6;
+    text-align: center;
+    font-size: 10px;
+}
+
+#alts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#alts #google p, #alts #facebook p{
+    font-size: 10px;
+}
+
+#alts #google, #alts #facebook{
+    display:flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+    align-items: center;
+    border: 1px solid #cdc4d6;
+    padding: 3px 5px;
+}
+
+#alts #facebook p{
+    color: #454CA6;
+}
+
+#alts #google p{
+    color: #020741;
+}
+
+footer p{
+    color: #cdc4d6;
+    font-size: 10px;
+    text-align: center;
+}
+
+footer span{
+    text-decoration: underline;
+    cursor: pointer;
+}
